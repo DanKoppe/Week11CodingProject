@@ -1,0 +1,94 @@
+body {  /*targeting body element*/
+    background-color: #f8ef02; /*setting background to yellow*/
+}
+
+.game--container { /*targeting game container class*/
+    display: grid; /*setting display to grid*/
+    grid-template-columns: repeat(3, auto); /*creating 3 columns with auto sizing repeating to form grid*/
+    width: 300px; /*setting max width to 300 for even spacing*/
+    margin:  auto; /* centering grid */
+}
+
+.cell { /*targeting cell class*/
+    display: flex; /*setting to flex container*/
+    align-items: center; /* vertically centering content*/
+    justify-content: center; /* horizontally centering content*/
+    width: 100px; /*max width*/
+    height: 100px; /*max height*/
+    box-shadow: 0 0 0 1px #333333; /* double border less obvious */
+    border: 1px solid #333333; /*solid border*/
+    cursor: pointer; /*changing courser style to show input can be made by user*/
+    font-size: 60px; /*font size*/
+}
+
+h1 { /*targeting h1 element*/
+    text-align: center; /*centering text*/
+    font-family: Arial, Helvetica, sans-serif; /*changing font for readability*/
+    margin-bottom: 20px; /*setting bottom margin for spacing*/
+    text-shadow: 0 0 10px #630ff6, 0 0 20px #630ff6, 0 0 30px #630ff6; /*text shadow for glow effect*/
+    color: #00ffd2; /*text color for neon cyberpunk feel*/
+    background-color: black; /*setting background to black to avoid text/body-background color clashing*/
+}
+
+.game--status-container { /*targeting game status container class*/
+    text-align: center; /*centering text*/
+    background-color: black; /*background to black for readability*/
+    max-width: 300px; /*max width to match width of game grid*/
+    margin: 0 auto; /*centering container within parent*/
+    margin-top: 20px; /*top margin for spacing*/
+    margin-bottom: 20px; /*bottom margin for spacing*/
+}
+
+h2 { /*targeting h2 element*/
+    text-align: center; /*centering text*/
+    font-family: Arial, Helvetica, sans-serif; /*font change*/
+    margin-bottom: 20px auto; /*bottom margin for spacing*/
+    margin-top: 20px; /*top margin for spacing*/
+    color: #00ffd2; /*text color to neon*/
+    background-color: black; /*background to black for readability*/
+    display: inline; /*displaying inline*/
+}
+
+.game--restart { /*targeting restart game button*/
+    text-align: center; /*aligning text to center*/
+    justify-content: center; /*aligning items horizontally within flex container*/
+    align-items: center; /*aligning items vertically within flex container*/
+    background-color: #2f2f2f; /*background color*/
+    color: #00ff55; /*neon green text color*/
+    border: 1px solid #00ff55; /*neon green border*/
+    padding: 10px 20px; /*button padding*/
+    font-family: 'Courier New', monospace; /*different font to give cyberpunk feel*/
+    font-size: 20px; /*larger font size to stand out*/
+    text-transform: uppercase; /*using uppercase text to stand out*/
+    text-align: center; /*centering text*/
+    cursor: pointer; /*changing courser on hovor*/
+    transition: background-color 0.3s, color 0.3s; /*smoothing transition on color change*/
+}
+
+.game--restart:hover { /*setting hovor effects for game restart button*/
+    background-color: #00ff55; /*changing background color to neon green*/
+    color: #2f2f2f; /*changing text to dark color for readability on new background*/
+    border: 1px solid black; /*changing border to black for new background color*/
+}
+
+.button--container { /*targeting button container*/
+    display: flex; /*flex container*/
+    align-items: center; /*centering content*/
+    justify-content: center; /*centering content*/
+}
+
+.cell { /*targeting cell class*/
+    color: #ff003c; /*setting color of X and O to red*/
+    text-shadow: 0 0 10px #ff003c; /*apply shadow for glow effect*/
+}
+
+.game--alert { /*targeting alert*/
+    background-color: #800080; /*changing background color*/
+    text-align: center; /*centering text*/
+    font-size: 50px; /*enlarging font size*/
+    margin-top: 20px; /*adding top margin*/
+}
+
+.game--alert-text { /*targeting alert text*/
+    color: #00ffd2 /*changing text color*/
+}

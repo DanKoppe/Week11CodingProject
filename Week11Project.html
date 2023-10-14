@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!--HTML-->
+<html lang="en">
+<head> <!--Head-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Project</title> <!--title-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> <!--bootstrap link-->
+    <link rel="stylesheet" href="styles.css"> <!--css styles link-->
+</head>
+<body> <!--body-->
+    <section> <!--Game section-->
+        <h1 class="game--title">Tic Tac Toe</h1> <!--Main h1 title-->
+        <div class="game--container"> <!--game board container-->
+            <div data-index="0" class="cell"></div> <!--9 game board cells with index and class-->
+            <div data-index="1" class="cell"></div>
+            <div data-index="2" class="cell"></div>
+            <div data-index="3" class="cell"></div>
+            <div data-index="4" class="cell"></div>
+            <div data-index="5" class="cell"></div>
+            <div data-index="6" class="cell"></div>
+            <div data-index="7" class="cell"></div>
+            <div data-index="8" class="cell"></div>
+        </div>
+        <div class="game--status-container"><!--container for H2 element-->
+            <h2 class="game--status">Player 1 Wins!</h2> <!--H2 game status element-->
+        </div>
+        <div class = "button--container"> <!--container for button elemement-->
+            <button class="game--restart">Restart Game</button> <!--button with class-->
+        </div>
+        <div class="game--alert alert alert-success alert-dismissible fade show d-none" role="alert"> <!--bootstrap alert that is initially hidden-->
+            <span class="game--alert-text"></span> <!--bootstrap alert text-->
+        </div>
+          
+    </section>
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> <!--script source for bootstrap-->
+<script src="node_modules/jquery/dist/jquery.js"></script> <!--script source for jquery-->
+<script src="Week11Project.js"></script> <!--script source for Javascript file-->
+
+</body>
+</html>
